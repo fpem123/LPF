@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "home.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "keywords": [],
+  "aouthor": "Lee Hoseop",
+  "license": ""
+}
