@@ -9,10 +9,27 @@
 
 
 // import
+const express = require("express");
 const http = require('http');
-const fs = require('fs');
 const url = require('url');
-const port = 3000;
+const port = normalizePort(process.env.PORT || '3000');
+
+
+function normalizePort(val) {
+  var port = parseInt(val, 10);
+
+  if (isNaN(port)) {
+    // named pipe
+    return val;
+  }
+
+  if (port >= 0) {
+    // port number
+    return port;
+  }
+
+  return false;
+}
 
 
 /**
@@ -275,4 +292,6 @@ let app = http.createServer(function(request, response){
   }
 });
 
-app.listen(port);
+app.listen(port, () => {
+  console.log(`Server running at ${port}`);
+});

@@ -1,12 +1,24 @@
 {
-  "name": "app",
+  "name": "LargestPrimeFactor",
   "version": "1.0.0",
-  "description": "",
+  "description": "largest prime factor web app",
   "main": "home.js",
   "scripts": {
     "start": "node home.js"
+  },"engines":{
+     "node":"14.15.0"
   },
-  "keywords": [],
-  "aouthor": "Lee Hoseop",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fpem123/LPF.git"
+  },
+  "author": "Lee Hoseop",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fpem123/LPF/issues"
+  },
+  "homepage": "https://github.com/fpem123/LPF#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

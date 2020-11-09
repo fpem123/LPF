@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-11-09T14:59:53Z"
+  finalizers:
+  - service.kubernetes.io/load-balancer-cleanup
+  labels:
+    app: lpw-web
+  name: lpw-web-service
+  namespace: default
+  resourceVersion: "32086"
+  selfLink: /api/v1/namespaces/default/services/lpw-web-service
+  uid: 42d9b2d2-b894-4d89-830a-9bf4a03272a8
+spec:
+  clusterIP: 10.40.11.22
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31977
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app: lpw-web
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 34.68.9.84
