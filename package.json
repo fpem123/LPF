@@ -4,9 +4,9 @@
   "description": "",
   "main": "home.js",
   "scripts": {
-    "start": "node ."
+    "start": "node home.js"
   },
   "keywords": [],
   "aouthor": "Lee Hoseop",
-  "license": ""
+  "license": "ISC"
 }

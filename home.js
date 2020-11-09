@@ -89,9 +89,11 @@ function factorization(number) {
  */
 function mkResult(factors) {
   if (!isNaN(factors[0])) {
+    console.log(factors[factors.length - 1]);
     // 배열의 마지막 요소는 항상 최대 소인수이다.
     return [factors[factors.length - 1], factors, true];
   } else {
+    console.log("number error");
     return [factors, "Please input a number[2-1000000]", false];
   }
 }
