@@ -1,8 +1,9 @@
 FROM node
-MAINTAINER  Lee Hoseop, <ghtjq3909@naver.com>
+MAINTAINER  Lee Hoseop <ghtjq3909@naver.com>
 
-RUN git clone https://github.com/fpem123/LPF.git
+RUN mkdir -p /LPF
 WORKDIR /LPF
+COPY . .
 RUN npm install
 
 EXPOSE 3000
