@@ -1,7 +1,7 @@
 {
   "name": "LargestPrimeFactor",
   "version": "1.0.0",
-  "description": "largest prime factor web app",
+  "description": "Largest prime factor web app",
   "main": "home.js",
   "scripts": {
     "start": "node home.js"
