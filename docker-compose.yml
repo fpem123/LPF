@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  app:
+    restart: unless-stopped
+    container_name: app
+    image: leehoseop/lpf-web
+    build: .
+
+    ports:
+      - "3000:3000"
+
+volumes:
+  logvolume01: {}

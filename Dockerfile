@@ -5,6 +5,7 @@ RUN mkdir -p /LPF
 WORKDIR /LPF
 COPY . .
 RUN npm install
+RUN npm install pm2 -g
 
 EXPOSE 3000
 
