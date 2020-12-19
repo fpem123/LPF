@@ -4,7 +4,7 @@
   "description": "largest prime factor web app",
   "main": "home.js",
   "scripts": {
-    "start": "pm2 start home.js --watch --name lpf-web"
+    "start": "node home.js"
   },
   "engines": {
     "node": "14.15.0"
