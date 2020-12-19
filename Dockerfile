@@ -1,9 +1,8 @@
 FROM node
 MAINTAINER  Lee Hoseop <ghtjq3909@naver.com>
 
-RUN mkdir -p /LPF
+RUN git clone https://github.com/fpem123/LPF.git
 WORKDIR /LPF
-COPY . .
 RUN npm install
 RUN npm install pm2 -g
 
