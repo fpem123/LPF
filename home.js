@@ -221,7 +221,7 @@ function inputArea() {
  */
 function printResult(results){
   let discription =
-    `<table border="0" width = "90%" align="center">
+    `<table border="0" width = "91%" align="center">
       <tr>
         <th bgcolor="#B0B0B0" colspan="3">Factorize Result</th>
       </tr>
