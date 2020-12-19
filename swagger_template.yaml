@@ -1,0 +1,40 @@
+openapi: 3.0.0   # Open api version
+
+info:   # Set basic infomation
+  title: my-largest-prime-pactor-web
+  version: "v0.1"
+  contact:
+    email: "ghtjq3909@gmail.com"
+
+servers:   # Set your server endpoint
+  - url: https://main-lpf-fpem123.endpoint.ainize.ai
+
+tags:
+- name: "user"
+  description: "user"
+
+paths:
+  /:   # GET method path
+    get:
+      tags:
+      - "user"
+      summary: "Natural number less than million"
+      description: "It is a natural number less than a million you want to do prime factorization."
+      parameters:   # Set parameter values here
+        - name: "input"   # Set parameter name
+          in: "query"   # Select amongst query, header, path, and cookie
+          description: "Natural number less than million"
+          required: true
+          schema:
+            type: "number"
+      responses:   # Set response
+        '200':
+          description: "Successful Response"
+        '400':
+          description: "Bad Request Error"
+        '500':
+          description: "Server-side Error"
+        '503':
+          description: "Server is not ready"
+        default:
+          description: "Unexpected Error"
